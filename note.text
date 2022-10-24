@@ -1,0 +1,8 @@
+1. what is universal selector ?
+example: 
+      // * this semble using universal selector.
+      // universal selector apply on all element  this page.
+        *{
+            color:red;
+            font-algin:center;
+        }
