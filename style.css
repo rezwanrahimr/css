@@ -10,7 +10,7 @@ header {
 }
 #cv-contant {
   width: 80%;
-  height: 700px;
+  height: 1100px;
   margin: 0px auto;
   background-color: azure;
 }
@@ -72,4 +72,33 @@ hr {
 #work-experience-section {
   margin-top: 20px;
   margin: 0px 40px;
+}
+#skill-section {
+  margin-top: 20px;
+  margin: 0px 40px;
+}
+/* Education Section start */
+#edu-right {
+  float: left;
+  width: 40%;
+}
+#edu-left {
+  float: left;
+  width: 40%;
+}
+/* Footer Section start */
+footer {
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+  color: white;
+  background-color: black;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+footer p {
+  margin-top: 10px;
 }
