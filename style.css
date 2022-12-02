@@ -5,6 +5,9 @@
 body {
   background-color: beige;
 }
+header {
+  margin: 0px 40px;
+}
 #cv-contant {
   width: 80%;
   height: 700px;
@@ -22,4 +25,51 @@ header img {
 #profile-bio {
   margin-top: 30px;
   float: left;
+}
+#contact-info {
+  margin: 15px;
+  float: right;
+}
+#clear-div {
+  clear: both;
+}
+#hr-top {
+  border: 2px solid black;
+  width: 90%;
+  margin: 10px auto;
+}
+hr {
+  border: 1px solid black;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Personal Information Start */
+.right-div {
+  width: 70%;
+  float: left;
+}
+.work-right-div {
+  margin-top: 15px;
+  width: 70%;
+  float: right;
+}
+.left-div {
+  width: 30%;
+  float: left;
+}
+#personal-info-section {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+/* #work-experience-div .left-div {
+  float: left;
+}
+#work-experience-div .right-div {
+  width: 40%;
+  float: left;
+} */
+#work-experience-section {
+  margin-top: 20px;
+  margin: 0px 40px;
 }
