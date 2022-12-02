@@ -21,10 +21,57 @@
             clear: both;
             background-color: azure;
         }
+
+        /* Navbar Menu */
+        .nav-menu {
+            margin: 0 auto;
+            width: 400px;
+            height: 50px;
+            background-color: rgb(121, 184, 184);
+        }
+
+        .nav-menu ul {
+
+            list-style-type: none;
+
+
+        }
+
+        .nav-menu ul li {
+            float: left;
+
+        }
+
+        .nav-menu ul li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 10px;
+            font-size: large;
+
+
+        }
+
+        .nav-menu ul li a:hover {
+            text-decoration: underline;
+            color: chartreuse;
+
+        }
     </style>
 </head>
 
 <body>
+    <!-- create navbar -->
+    <section class="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </section>
+
+    <br><br>
     <section id="one">
         <h1>section 1</h1>
     </section>
