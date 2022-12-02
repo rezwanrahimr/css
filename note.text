@@ -6,3 +6,27 @@ example:
             color:red;
             font-algin:center;
         }
+
+2.what is child selectors in css ?
+example: 
+        // > this semble usign child selector.
+         div > p {
+            color: red;
+            font-size: 30px;
+        }
+
+3. what is adjust and civilian sector in css?
+example:
+        // + this semble using adjust and civilian sector.
+        div + p {
+            color: red;
+            font-size: 30px;
+        }
+
+4.what is genaral civiling seletor ?
+example:
+        // ~ this semble using genaral civiling selector.
+         div ~ p {
+            color: red;
+            font-size: 30px;
+        }
