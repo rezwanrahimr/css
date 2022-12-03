@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Creating Calculator */
+.container {
+  margin: 0 auto;
+  width: 400px;
+  height: 700px;
+}
+header h1 {
+  text-align: center;
+  margin: 10px 0px;
+}
+header #display {
+  width: 400px;
+  height: 50px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-rows: repeat(4, 1fr); */
+}
+main > div {
+  flex-grow: 1;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > div > button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: large;
+}
