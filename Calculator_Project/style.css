@@ -7,15 +7,20 @@
 .container {
   margin: 0 auto;
   width: 400px;
-  height: 700px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-header h1 {
+body h1 {
   text-align: center;
   margin: 10px 0px;
 }
 header #display {
+  border: 2px solid black;
   width: 400px;
-  height: 50px;
+  height: 70px;
+  border-radius: 5px;
+  direction: rtl;
+  font-size: 30px;
 }
 main {
   display: flex;
@@ -25,16 +30,27 @@ main {
 }
 main > div {
   flex-grow: 1;
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 80px;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
+}
+main > div:hover {
+  background-color: rgb(171, 171, 162);
 }
 main > div > button {
+  font-weight: bolder;
   border: none;
   background: none;
   color: white;
   font-size: large;
+}
+main .arithmetic-operators {
+  background-color: blueviolet;
+}
+main .equal-operator {
+  background-color: rgb(180, 180, 64);
 }
