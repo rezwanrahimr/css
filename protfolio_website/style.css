@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+}
+nav a {
+  margin: 20px;
+}
+/* Responsive Navbar */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
