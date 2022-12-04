@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        #container>div {
+            border: 2px solid tomato;
+        }
+
+        #container {
+            height: 500px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px auto 50px;
+            grid-template-areas:
+                "h h h h h h h h h h h h"
+                "m m m c c c c c c c c c"
+                "f f f f f f f f f f f f"
+            ;
+        }
+
+        .header {
+            grid-area: h;
+        }
+
+        .footer {
+            grid-area: f;
+        }
+
+        .menu {
+            grid-area: m;
+        }
+
+        .content {
+            grid-area: c;
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+
+    </div>
+
+</body>
+
+</html>
