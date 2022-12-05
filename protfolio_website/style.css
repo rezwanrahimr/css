@@ -12,6 +12,19 @@ nav {
 nav a {
   margin: 20px;
 }
+/* playlist */
+#playlist {
+  text-align: center;
+}
+#playlist h4 {
+  margin: 50px;
+}
+/* card */
+#card {
+  background-image: url("./images/R.png");
+  background-position: cover;
+}
+
 /* Responsive Navbar */
 @media screen and (max-width: 600px) {
   nav {
