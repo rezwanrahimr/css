@@ -116,9 +116,11 @@
             color: #143774;
             font-size: 2rem;
             font-family: 'Lora', serif;
+            margin: 0;
         }
 
         .sub-titel {
+            margin: 0;
             color: #1792D2;
             font-size: 0.75rem;
             font-family: 'Ubuntu',
@@ -141,7 +143,7 @@
 
         nav li {
             list-style: none;
-            margin: 0 1em;
+            margin-left: 1em;
         }
 
         nav a {
@@ -165,6 +167,38 @@
 
         }
 
+        /*  */
+        .nav-container {
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:767px) {
+            header {
+                text-align: center;
+            }
+
+            .nav-container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                padding: 0;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+
+            nav li {
+                padding: 0;
+                margin-bottom: 1em;
+            }
+
+
+        }
+
         /* .......................
                 navbar end
          ....................... */
@@ -174,15 +208,20 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="main-titel">Living the simple life</h1>
-            <h6 class="sub-titel">A BLOC EXPLORING MINIMALISM IN LIFE</h6>
-            <nav>
-                <ul>
-                    <li><a href="#" class="current-page">HOME</a></li>
-                    <li><a href="#">ABOUT ME</a></li>
-                    <li><a href="#">RECENT POSTS</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <div>
+                    <h1 class="main-titel">Living the simple life</h1>
+                    <h6 class="sub-titel">A BLOC EXPLORING MINIMALISM IN LIFE</h6>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="current-page">HOME</a></li>
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">RECENT POSTS</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- /.container -->
+
         </header>
         <h1>Let's Start <span> Getting a Little </span> More Fancy !</h1>
         <img src="https://images1.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg" alt="">
