@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
     <title>Responsive Web Design</title>
     <style>
         body {
+            margin: 0;
             font-size: 1.125rem;
         }
 
+        /* .......................
+                main part start
+         ....................... */
         .container {
             box-sizing: border-box;
             margin: 0 auto;
@@ -23,7 +31,7 @@
 
         }
 
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:767px) {
             .columns {
                 flex-direction: column;
             }
@@ -78,7 +86,7 @@
             width: 75%;
         }
 
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:767px) {
 
             .col-1,
             .col-2,
@@ -86,11 +94,96 @@
                 width: 95%;
             }
         }
+
+        /* .......................
+                main part end
+         ....................... */
+
+
+        /* .......................
+                navbar start
+         ....................... */
+
+        header {
+            box-sizing: border-box;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 2em;
+            text-align: center;
+        }
+
+        .main-titel {
+            color: #143774;
+            font-size: 2rem;
+            font-family: 'Lora', serif;
+        }
+
+        .sub-titel {
+            color: #1792D2;
+            font-size: 0.75rem;
+            font-family: 'Ubuntu',
+                sans-serif;
+
+        }
+
+        nav {
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: 'Ubuntu',
+                sans-serif;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: #707070;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        a:focus {
+            color: red;
+            cursor: pointer;
+
+        }
+
+        .current-page {
+            border-bottom: .1em solid #707070;
+        }
+
+        .current-page:hover {
+            color: #707070;
+
+        }
+
+        /* .......................
+                navbar end
+         ....................... */
     </style>
 </head>
 
 <body>
     <div class="container">
+        <header>
+            <h1 class="main-titel">Living the simple life</h1>
+            <h6 class="sub-titel">A BLOC EXPLORING MINIMALISM IN LIFE</h6>
+            <nav>
+                <ul>
+                    <li><a href="#" class="current-page">HOME</a></li>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">RECENT POSTS</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1>Let's Start <span> Getting a Little </span> More Fancy !</h1>
         <img src="https://images1.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg" alt="">
         <div class="columns">
