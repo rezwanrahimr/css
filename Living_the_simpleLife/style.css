@@ -129,6 +129,24 @@ main h2 {
   float: right;
   margin-bottom: -5px;
 }
+
+@media (min-width: 768px) {
+  .article-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+  }
+  .col-img {
+    width: 40%;
+  }
+  .col-img h6 {
+    float: left;
+  }
+  .col-text {
+    width: 55%;
+  }
+}
+
 /* side var */
 .about-me h2 {
   visibility: hidden;
