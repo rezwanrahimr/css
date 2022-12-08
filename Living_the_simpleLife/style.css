@@ -54,6 +54,9 @@ nav a:focus {
     float: left;
     margin: 0 1.5em;
   }
+  .nav-text {
+    text-align: left;
+  }
 }
 /* Navbar end */
 
@@ -64,6 +67,19 @@ font-family: 'Ubuntu', sans-serif; */
 .main-container {
   width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main {
+    width: 70%;
+  }
+  .sidebar {
+    width: 25%;
+  }
 }
 main h2 {
   font-size: 1.5rem;
@@ -89,7 +105,6 @@ main h2 {
 
 #buttom-line {
   font-family: "Ubuntu", sans-serif;
-  font-size: 0.75rem;
   font-weight: bold;
   color: #1792d2;
   border-bottom: 1.5px solid black;
@@ -125,9 +140,39 @@ main h2 {
   box-sizing: border-box;
   padding: 2em;
   margin: 1em 0;
-  border: 2px solid rgb(220, 219, 219);
+  border: 15px solid rgb(220, 219, 219);
+}
+/* recent items */
+.recent-items {
+  box-sizing: border-box;
+  padding: 2em;
+  border: 15px solid rgb(220, 219, 219);
+}
+.recent-items div {
+  margin: 1em 0;
+}
+.recent-items img {
+  min-width: 100%;
+}
+.recent-items div h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #1792d2;
 }
 
+@media (min-width: 768px) {
+  .about-me h2 {
+    visibility: visible;
+    margin-bottom: 1em;
+  }
+  .about-me p {
+    margin: 1em 0;
+  }
+  .recent-items img {
+    max-width: 100%;
+  }
+}
+/* recent items end */
 .main-container h6 {
   font-family: "Ubuntu", sans-serif;
   font-size: 0.875rem;
