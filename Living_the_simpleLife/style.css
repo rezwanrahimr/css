@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-size: 1.125rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+}
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -54,3 +59,88 @@ nav a:focus {
 
 /* font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif; */
+
+/*  */
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 1.5rem;
+  font-family: "Lora", serif;
+  color: #143774;
+  font-weight: lighter;
+}
+.top-section {
+  margin: 1em 0 0 0;
+}
+.top-section img {
+  max-width: 100%;
+}
+.top-section h6 {
+  margin: 1em 0;
+}
+.top-section p {
+  text-align: justify;
+  margin: 1em 0;
+}
+
+/* articel section */
+
+#buttom-line {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #1792d2;
+  border-bottom: 1.5px solid black;
+  padding: 1em 0;
+}
+.article-contant h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #1792d2;
+}
+
+.article-contant img {
+  min-width: 100%;
+  margin: 1em 0;
+}
+.article-contant p {
+  margin: 1em 0;
+}
+.article-flex h6 {
+  display: inline-block;
+  float: right;
+  margin-bottom: -5px;
+}
+/* side var */
+.about-me h2 {
+  visibility: hidden;
+}
+.about-me img {
+  max-width: 100%;
+}
+.about-me {
+  box-sizing: border-box;
+  padding: 2em;
+  margin: 1em 0;
+  border: 2px solid rgb(220, 219, 219);
+}
+
+.main-container h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+  font-weight: lighter;
+}
+.sidebar h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  color: #143774;
+}
+.sidebar h3 {
+  font-size: 1.2rem;
+  font-family: "Lora", serif;
+  color: #143774;
+  font-weight: lighter;
+}
