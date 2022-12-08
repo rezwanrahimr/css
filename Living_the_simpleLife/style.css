@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
 }
-
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
 /* Navbar start */
 .nav-container {
   text-align: center;
-}
-.nav-text {
-  margin-top: 2em;
+  background: aliceblue;
+  padding: 2em;
 }
 .nav-text h1 {
   font-family: "Lora", serif;
@@ -48,5 +50,7 @@ nav a:focus {
     margin: 0 1.5em;
   }
 }
+/* Navbar end */
+
 /* font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif; */
