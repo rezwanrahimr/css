@@ -46,6 +46,7 @@ nav a:focus {
 
 @media (min-width: 768px) {
   .nav-container {
+    margin-bottom: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,4 +207,13 @@ main h2 {
   font-family: "Lora", serif;
   color: #143774;
   font-weight: lighter;
+}
+/* Footer start*/
+footer {
+  max-width: 100%;
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  margin-top: 1em;
 }
